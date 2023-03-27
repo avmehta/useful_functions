@@ -1,0 +1,16 @@
+
+# Prevent Colab Timeout
+
+function ClickConnect(){
+console.log("Working"); 
+document.querySelector("colab-toolbar-button#toolbar-add-code").click() 
+}setInterval(ClickConnect,120000)
+
+#Copy files from gdrive to colab
+%cp /content/gdrive/My\ Drive/best.pt /content/yolov5/weights
+
+#Copy Files from colab to gdrivef
+%cp /content/yolov5/runs/exp0_yolov5s_results/weights/best.pt /content/gdrive/My\ Drive
+
+
+
